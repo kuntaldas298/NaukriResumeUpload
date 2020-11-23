@@ -32,7 +32,7 @@ public class FileLib {
 	 * @return path
 	 */
 	public String resumePath() {
-		File f = new File("./src/test/resources/data/resume.docx");
+		File f = new File("./src/test/resources/data/resume1.docx");
 		String path=f.getAbsolutePath();
 		return path;
 	}

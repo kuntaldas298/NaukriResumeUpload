@@ -41,12 +41,12 @@ public class BaseClass {
 		LoginPage l = new LoginPage(driver);
 		l.setLogin(un, pd);
 	}
-	@AfterMethod
-	public void logout() {
-		UploadResumePage u = new UploadResumePage(driver);
-		wcl.waitImplicit(driver, 15);
-		Actions a=new Actions(driver);
-		a.moveToElement(u.getMyNaukriMenu()).perform();
-		u.setLogout();
-	}
+//	@AfterMethod
+//	public void logout() {
+//		UploadResumePage u = new UploadResumePage(driver);
+//		wcl.waitImplicit(driver, 15);
+//		Actions a=new Actions(driver);
+//		a.moveToElement(u.getMyNaukriMenu()).perform();
+//		u.setLogout();
+//	}
 }

@@ -17,10 +17,10 @@ public class UploadResume extends BaseClass{
 		UploadResumePage u = new UploadResumePage(driver);
 		Thread.sleep(3000);
 		Actions a=new Actions(driver);
-		//a.moveToElement(u.getUploadBtn()).sendKeys(f.resumePath()).perform();
-		a.moveToElement(u.getUploadBtn()).click().perform();
+		a.moveToElement(u.getUploadBtn()).sendKeys(f.resumePath()).perform();
+//		a.moveToElement(u.getUploadBtn()).click().perform();
 		
-		//u.getUploadBtn().sendKeys(f.resumePath());
-//		u.getUploadBtn().click(); 
+//      u.getUploadBtn().sendKeys(f.resumePath());
+//		u.getUploadBtn().click();
 	}
 }
